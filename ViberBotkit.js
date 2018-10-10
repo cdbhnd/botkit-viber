@@ -17,7 +17,9 @@ function ViberBot(config) {
     }
 
     function removeHostFromWebhook(url) {
-        return url.replace(/^[a-z]{4,5}\:\/{2}[a-z]{1,}\:[0-9]{1,4}.(.*)/, '$1'); // http or https
+        var urlSplit = url.split('/');
+        var host = urlSplit[0] + "//" + urlSplit[2] + "/";
+        return url.replace(host, '');
     }
 
     function registerWebhookOnViberPlatfrom(webhookUri) {
