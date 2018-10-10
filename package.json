@@ -2,7 +2,7 @@
   "name": "viber-botkit",
   "version": "1.0.0",
   "description": "",
-  "main": "ViberBot.js",
+  "main": "ViberBotkit.js",
   "dependencies": {
     "accepts": "^1.3.5",
     "agent-base": "^4.2.1",

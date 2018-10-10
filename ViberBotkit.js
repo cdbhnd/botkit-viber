@@ -1,3 +1,5 @@
+var ViberMessageTypes = require('./ViberMessageTypes');
+
 function ViberBotkit(config) {
     var server = require('express')();
     var botkit = require('botkit');
@@ -152,4 +154,7 @@ function ViberBotkit(config) {
 
 }
 
-module.exports = ViberBotkit;
+module.exports = {
+    ViberBotkit: ViberBotkit ,
+    ViberMessageTypes: ViberMessageTypes
+}
