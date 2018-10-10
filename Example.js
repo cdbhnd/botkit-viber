@@ -1,10 +1,10 @@
 // botkit official https://botkit.ai/docs/core.html
-var viberBotkit = require('./ViberBotkit')
+var viberBotkit = require('viber-botkit');
 
-// for more info see  https://developers.viber.com/docs/api/rest-bot-api/
-var viberMessageTypes = require('./ViberMessageTypes');
+//for more info see  https://developers.viber.com/docs/api/rest-bot-api/
+var viberMessageTypes = viberBotkit.ViberMessageTypes;
 
-var controller = viberBotkit({
+var controller = viberBotkit.ViberBot({
     viberToken: 'your-viber-token',
     webhookUri: 'your-webhook-uri',
     serverPort: '80',
